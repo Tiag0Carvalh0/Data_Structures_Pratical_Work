@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Solucao de Escalonamento - Tiago_Carvalho_18601_EEC_EDA: Código-Fonte de functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Solucao de Escalonamento - Tiago_Carvalho_18601_EEC_EDA<span id="projectnumber">&#160;Fase.2</span>
+   </div>
+   <div id="projectbrief">Estruturas de Dados 2021/2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">functions.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="functions_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//****************************************************Structs**************************************************************//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Struct of Job 1</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structprocess.html">    6</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structprocess.html">process</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structprocess.html#ae83e8e738d5577ab198c23b7f213488b">    8</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structprocess.html#ae83e8e738d5577ab198c23b7f213488b">operationNbr</a>, <a class="code hl_variable" href="structprocess.html#ade274b33bebbcccffa2f43d14ace15f7">totalMachines</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structprocess.html#acb7ef18181e39c9031a227e7ef07e5ba">    9</a></span>    <span class="keywordtype">int</span> *<a class="code hl_variable" href="structprocess.html#ad7712bcef12dfd2be512ee3481765d48">workingMachines</a>, *<a class="code hl_variable" href="structprocess.html#acb7ef18181e39c9031a227e7ef07e5ba">time</a>; <span class="comment">// Dynamic Array</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structprocess.html#afb6bfb2401be55e0f32c65648e941464">   10</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structprocess.html">process</a> *<a class="code hl_variable" href="structprocess.html#afb6bfb2401be55e0f32c65648e941464">nextProcesses</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">   11</a></span>} <a class="code hl_typedef" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structjob.html">   13</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structjob.html">job</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structjob.html#ac41f0fd01371440096b805b375c15553">   15</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structjob.html#ac41f0fd01371440096b805b375c15553">jobNumber</a> , <a class="code hl_variable" href="structjob.html#ac3a84aef8e4d48d5c78ddafb5273dc20">totalProcesses</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structjob.html#af55ec3cfbdbc190077f0e39760152e1e">   16</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structjob.html">job</a> *<a class="code hl_variable" href="structjob.html#af55ec3cfbdbc190077f0e39760152e1e">nextJob</a>; <span class="comment">//Next job on the list</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structjob.html#abbb67dcf4f5d73e2c98365c25e3bcedc">   17</a></span>    <a class="code hl_struct" href="structprocess.html">processes</a> *<a class="code hl_variable" href="structjob.html#abbb67dcf4f5d73e2c98365c25e3bcedc">processList</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">   19</a></span>} <a class="code hl_typedef" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//****************************************************Jobs Functions**************************************************************//</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Add New Jobs Manually</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><a class="code hl_struct" href="structjob.html">jobs</a> *<a class="code hl_function" href="functions_8h.html#ac9cadd2e959e8c82e332f4cea7d239f2">NewJob</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *mainJob, <span class="keywordtype">int</span> totalNewJobs, <span class="keywordtype">int</span> jobNumb);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Add New Jobs bt File</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><a class="code hl_struct" href="structjob.html">jobs</a> *<a class="code hl_function" href="functions_8h.html#a68ea2d93da0f56b8e06b486ee4ecbd16">NewAtUpload</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *mainJob, <span class="keywordtype">int</span> jobNbr, <span class="keywordtype">int</span> totalProc, <span class="keywordtype">int</span> *operationNumber, <span class="keywordtype">int</span> *totalMachines, <span class="keywordtype">int</span> operations, <span class="keywordtype">int</span> *buffMach, <span class="keywordtype">int</span> *bufferTime, <span class="keywordtype">int</span> lastPos);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Get Data From File</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><a class="code hl_struct" href="structjob.html">jobs</a> *<a class="code hl_function" href="functions_8h.html#a1eef11b269b69615e40669085f8ad911">LoadFromFile</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *mainJob, <span class="keywordtype">int</span> *totalJobs);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Remove Jobs</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">int</span> <a class="code hl_function" href="functions_8h.html#a43a6bbb10602df5f9bafe6a4c66515a2">RemoveJobs</a>(<a class="code hl_struct" href="structjob.html">jobs</a> **mainjob, <span class="keywordtype">int</span> toRemove);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Save To File</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><a class="code hl_struct" href="structprocess.html">processes</a> *<a class="code hl_function" href="functions_8h.html#a7592560b72b03046bf4484f2e66e6d3b">SaveAllData</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *mainJob, <span class="keywordtype">int</span> totalJobs);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Show All Data</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_struct" href="structprocess.html">processes</a> *<a class="code hl_function" href="functions_8h.html#a453689d882b2d2278d0a26975ddf2aa0">ShowAllData</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *jAux);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// Edit Jobs Data</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_struct" href="structprocess.html">processes</a> *<a class="code hl_function" href="functions_8h.html#ac929c33cd7eed8e0da92005961032971">EditJobs</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *jAux, <span class="keywordtype">int</span> toModify, <span class="keywordtype">int</span> newJobNbr, <span class="keywordtype">bool</span> *loaded);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// Print Available Jobs</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">int</span> <a class="code hl_function" href="functions_8h.html#a96cfabd64251e5b05ab87f08c10726d8">AvailableJobs</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *jAux);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// FJSSP</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> <a class="code hl_function" href="functions_8h.html#a024737ce7d1698c37f533d8d7a2608fd">FJSSP</a>(<a class="code hl_struct" href="structjob.html">jobs</a> *jAux);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// Export FJSSP Table</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">void</span> <a class="code hl_function" href="functions_8h.html#a49073be9014ce8ccec2f8d2c12ffacff">ExportFJSSPTable</a>(<span class="keywordtype">int</span> myArray[8][200], <span class="keywordtype">int</span> totalTime);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//****************************************************Procecess Functions**************************************************************//</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// Add Process Manually</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><a class="code hl_struct" href="structprocess.html">processes</a> *<a class="code hl_function" href="functions_8h.html#a675bcce75d77d9fef5ac2307ef63993f">NewProcess</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *mainProcess, <span class="keywordtype">int</span> <a class="code hl_variable" href="structjob.html#ac3a84aef8e4d48d5c78ddafb5273dc20">totalProcesses</a>, <span class="keywordtype">bool</span> uploaded, <span class="keywordtype">int</span> newAdd);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Add Process By Uploading From File</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><a class="code hl_struct" href="structprocess.html">processes</a> *<a class="code hl_function" href="functions_8h.html#a59948889ed22035ee5814b516f7a5591">NewAtLoad</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *loadProcess, <span class="keywordtype">int</span> *totalMachines, <span class="keywordtype">int</span> *operationNumber, <span class="keywordtype">int</span> counter, <span class="keywordtype">int</span> *bufferMachines, <span class="keywordtype">int</span> *bufferTimes, <span class="keywordtype">int</span> lastPos);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// Remove Process From The List</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">int</span> <a class="code hl_function" href="functions_8h.html#a98f0858cae5935c9138d4a36d5bc1bd2">RemoveProcess</a>(<a class="code hl_struct" href="structprocess.html">processes</a> **proce, <span class="keywordtype">bool</span> *loaded);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Modify Data From a Process</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">int</span> <a class="code hl_function" href="functions_8h.html#ad3baa3f72bacc5f7b518a365cf0cc8af">ModifyData</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *pAux, <span class="keywordtype">bool</span> *loaded);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// Calculate Minimum Time Needed For Complete All Processes</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">int</span> <a class="code hl_function" href="functions_8h.html#a4e294d8a4d2cebb15b07ffd666be17ae">MinimumTime</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *pAux, <span class="keywordtype">bool</span> uploaded, <span class="keywordtype">int</span> min);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Calculate Maximum Time Needed For Complete All Processes</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">int</span> <a class="code hl_function" href="functions_8h.html#ad74708d35bf2c07bd0143f4da7a92095">MaximumTime</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *pAux, <span class="keywordtype">bool</span> uploaded, <span class="keywordtype">int</span> max);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Calculate Average Time Of All Availabel Machines</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">float</span> <a class="code hl_function" href="functions_8h.html#a42330b50d2c3fd639d8b3f2673f41272">AverageTime</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *pAux, <span class="keywordtype">bool</span> uploaded, <span class="keywordtype">float</span> avgDefault);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// Show All Machines And Times of Each Machine</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> <a class="code hl_function" href="functions_8h.html#a9c4f0a1c139198852868e5f83745b7d6">ShowData</a>(<a class="code hl_struct" href="structprocess.html">processes</a> *pro, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max, <span class="keywordtype">float</span> avg, <span class="keywordtype">bool</span> uplaoded);</div>
+<div class="ttc" id="afunctions_8h_html_a024737ce7d1698c37f533d8d7a2608fd"><div class="ttname"><a href="functions_8h.html#a024737ce7d1698c37f533d8d7a2608fd">FJSSP</a></div><div class="ttdeci">void FJSSP(jobs *jAux)</div><div class="ttdef"><b>Definition:</b> functions.c:313</div></div>
+<div class="ttc" id="afunctions_8h_html_a0e5605e6749a83b950cfefcbfbd43d3d"><div class="ttname"><a href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a></div><div class="ttdeci">struct job jobs</div></div>
+<div class="ttc" id="afunctions_8h_html_a1eef11b269b69615e40669085f8ad911"><div class="ttname"><a href="functions_8h.html#a1eef11b269b69615e40669085f8ad911">LoadFromFile</a></div><div class="ttdeci">jobs * LoadFromFile(jobs *mainJob, int *totalJobs)</div><div class="ttdef"><b>Definition:</b> functions.c:95</div></div>
+<div class="ttc" id="afunctions_8h_html_a42330b50d2c3fd639d8b3f2673f41272"><div class="ttname"><a href="functions_8h.html#a42330b50d2c3fd639d8b3f2673f41272">AverageTime</a></div><div class="ttdeci">float AverageTime(processes *pAux, bool uploaded, float avgDefault)</div><div class="ttdef"><b>Definition:</b> functions.c:980</div></div>
+<div class="ttc" id="afunctions_8h_html_a43a6bbb10602df5f9bafe6a4c66515a2"><div class="ttname"><a href="functions_8h.html#a43a6bbb10602df5f9bafe6a4c66515a2">RemoveJobs</a></div><div class="ttdeci">int RemoveJobs(jobs **mainjob, int toRemove)</div><div class="ttdef"><b>Definition:</b> functions.c:139</div></div>
+<div class="ttc" id="afunctions_8h_html_a453689d882b2d2278d0a26975ddf2aa0"><div class="ttname"><a href="functions_8h.html#a453689d882b2d2278d0a26975ddf2aa0">ShowAllData</a></div><div class="ttdeci">processes * ShowAllData(jobs *jAux)</div><div class="ttdef"><b>Definition:</b> functions.c:231</div></div>
+<div class="ttc" id="afunctions_8h_html_a49073be9014ce8ccec2f8d2c12ffacff"><div class="ttname"><a href="functions_8h.html#a49073be9014ce8ccec2f8d2c12ffacff">ExportFJSSPTable</a></div><div class="ttdeci">void ExportFJSSPTable(int myArray[8][200], int totalTime)</div><div class="ttdef"><b>Definition:</b> functions.c:404</div></div>
+<div class="ttc" id="afunctions_8h_html_a4e294d8a4d2cebb15b07ffd666be17ae"><div class="ttname"><a href="functions_8h.html#a4e294d8a4d2cebb15b07ffd666be17ae">MinimumTime</a></div><div class="ttdeci">int MinimumTime(processes *pAux, bool uploaded, int min)</div><div class="ttdef"><b>Definition:</b> functions.c:922</div></div>
+<div class="ttc" id="afunctions_8h_html_a59948889ed22035ee5814b516f7a5591"><div class="ttname"><a href="functions_8h.html#a59948889ed22035ee5814b516f7a5591">NewAtLoad</a></div><div class="ttdeci">processes * NewAtLoad(processes *loadProcess, int *totalMachines, int *operationNumber, int counter, int *bufferMachines, int *bufferTimes, int lastPos)</div><div class="ttdef"><b>Definition:</b> functions.c:548</div></div>
+<div class="ttc" id="afunctions_8h_html_a675bcce75d77d9fef5ac2307ef63993f"><div class="ttname"><a href="functions_8h.html#a675bcce75d77d9fef5ac2307ef63993f">NewProcess</a></div><div class="ttdeci">processes * NewProcess(processes *mainProcess, int totalProcesses, bool uploaded, int newAdd)</div><div class="ttdef"><b>Definition:</b> functions.c:440</div></div>
+<div class="ttc" id="afunctions_8h_html_a68ea2d93da0f56b8e06b486ee4ecbd16"><div class="ttname"><a href="functions_8h.html#a68ea2d93da0f56b8e06b486ee4ecbd16">NewAtUpload</a></div><div class="ttdeci">jobs * NewAtUpload(jobs *mainJob, int jobNbr, int totalProc, int *operationNumber, int *totalMachines, int operations, int *buffMach, int *bufferTime, int lastPos)</div><div class="ttdef"><b>Definition:</b> functions.c:48</div></div>
+<div class="ttc" id="afunctions_8h_html_a7592560b72b03046bf4484f2e66e6d3b"><div class="ttname"><a href="functions_8h.html#a7592560b72b03046bf4484f2e66e6d3b">SaveAllData</a></div><div class="ttdeci">processes * SaveAllData(jobs *mainJob, int totalJobs)</div><div class="ttdef"><b>Definition:</b> functions.c:198</div></div>
+<div class="ttc" id="afunctions_8h_html_a96cfabd64251e5b05ab87f08c10726d8"><div class="ttname"><a href="functions_8h.html#a96cfabd64251e5b05ab87f08c10726d8">AvailableJobs</a></div><div class="ttdeci">int AvailableJobs(jobs *jAux)</div><div class="ttdef"><b>Definition:</b> functions.c:300</div></div>
+<div class="ttc" id="afunctions_8h_html_a98f0858cae5935c9138d4a36d5bc1bd2"><div class="ttname"><a href="functions_8h.html#a98f0858cae5935c9138d4a36d5bc1bd2">RemoveProcess</a></div><div class="ttdeci">int RemoveProcess(processes **proce, bool *loaded)</div><div class="ttdef"><b>Definition:</b> functions.c:601</div></div>
+<div class="ttc" id="afunctions_8h_html_a9c4f0a1c139198852868e5f83745b7d6"><div class="ttname"><a href="functions_8h.html#a9c4f0a1c139198852868e5f83745b7d6">ShowData</a></div><div class="ttdeci">void ShowData(processes *pro, int min, int max, float avg, bool uplaoded)</div><div class="ttdef"><b>Definition:</b> functions.c:1006</div></div>
+<div class="ttc" id="afunctions_8h_html_ac929c33cd7eed8e0da92005961032971"><div class="ttname"><a href="functions_8h.html#ac929c33cd7eed8e0da92005961032971">EditJobs</a></div><div class="ttdeci">processes * EditJobs(jobs *jAux, int toModify, int newJobNbr, bool *loaded)</div><div class="ttdef"><b>Definition:</b> functions.c:259</div></div>
+<div class="ttc" id="afunctions_8h_html_ac9cadd2e959e8c82e332f4cea7d239f2"><div class="ttname"><a href="functions_8h.html#ac9cadd2e959e8c82e332f4cea7d239f2">NewJob</a></div><div class="ttdeci">jobs * NewJob(jobs *mainJob, int totalNewJobs, int jobNumb)</div><div class="ttdef"><b>Definition:</b> functions.c:12</div></div>
+<div class="ttc" id="afunctions_8h_html_ad3baa3f72bacc5f7b518a365cf0cc8af"><div class="ttname"><a href="functions_8h.html#ad3baa3f72bacc5f7b518a365cf0cc8af">ModifyData</a></div><div class="ttdeci">int ModifyData(processes *pAux, bool *loaded)</div><div class="ttdef"><b>Definition:</b> functions.c:667</div></div>
+<div class="ttc" id="afunctions_8h_html_ad74708d35bf2c07bd0143f4da7a92095"><div class="ttname"><a href="functions_8h.html#ad74708d35bf2c07bd0143f4da7a92095">MaximumTime</a></div><div class="ttdeci">int MaximumTime(processes *pAux, bool uploaded, int max)</div><div class="ttdef"><b>Definition:</b> functions.c:951</div></div>
+<div class="ttc" id="afunctions_8h_html_aff451b9c9b5a160db7950f061fde164e"><div class="ttname"><a href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a></div><div class="ttdeci">struct process processes</div></div>
+<div class="ttc" id="astructjob_html"><div class="ttname"><a href="structjob.html">job</a></div><div class="ttdef"><b>Definition:</b> functions.h:14</div></div>
+<div class="ttc" id="astructjob_html_abbb67dcf4f5d73e2c98365c25e3bcedc"><div class="ttname"><a href="structjob.html#abbb67dcf4f5d73e2c98365c25e3bcedc">job::processList</a></div><div class="ttdeci">processes * processList</div><div class="ttdef"><b>Definition:</b> functions.h:17</div></div>
+<div class="ttc" id="astructjob_html_ac3a84aef8e4d48d5c78ddafb5273dc20"><div class="ttname"><a href="structjob.html#ac3a84aef8e4d48d5c78ddafb5273dc20">job::totalProcesses</a></div><div class="ttdeci">int totalProcesses</div><div class="ttdef"><b>Definition:</b> functions.h:15</div></div>
+<div class="ttc" id="astructjob_html_ac41f0fd01371440096b805b375c15553"><div class="ttname"><a href="structjob.html#ac41f0fd01371440096b805b375c15553">job::jobNumber</a></div><div class="ttdeci">int jobNumber</div><div class="ttdef"><b>Definition:</b> functions.h:15</div></div>
+<div class="ttc" id="astructjob_html_af55ec3cfbdbc190077f0e39760152e1e"><div class="ttname"><a href="structjob.html#af55ec3cfbdbc190077f0e39760152e1e">job::nextJob</a></div><div class="ttdeci">struct job * nextJob</div><div class="ttdef"><b>Definition:</b> functions.h:16</div></div>
+<div class="ttc" id="astructprocess_html"><div class="ttname"><a href="structprocess.html">process</a></div><div class="ttdef"><b>Definition:</b> functions.h:7</div></div>
+<div class="ttc" id="astructprocess_html_acb7ef18181e39c9031a227e7ef07e5ba"><div class="ttname"><a href="structprocess.html#acb7ef18181e39c9031a227e7ef07e5ba">process::time</a></div><div class="ttdeci">int * time</div><div class="ttdef"><b>Definition:</b> functions.h:9</div></div>
+<div class="ttc" id="astructprocess_html_ad7712bcef12dfd2be512ee3481765d48"><div class="ttname"><a href="structprocess.html#ad7712bcef12dfd2be512ee3481765d48">process::workingMachines</a></div><div class="ttdeci">int * workingMachines</div><div class="ttdef"><b>Definition:</b> functions.h:9</div></div>
+<div class="ttc" id="astructprocess_html_ade274b33bebbcccffa2f43d14ace15f7"><div class="ttname"><a href="structprocess.html#ade274b33bebbcccffa2f43d14ace15f7">process::totalMachines</a></div><div class="ttdeci">int totalMachines</div><div class="ttdef"><b>Definition:</b> functions.h:8</div></div>
+<div class="ttc" id="astructprocess_html_ae83e8e738d5577ab198c23b7f213488b"><div class="ttname"><a href="structprocess.html#ae83e8e738d5577ab198c23b7f213488b">process::operationNbr</a></div><div class="ttdeci">int operationNbr</div><div class="ttdef"><b>Definition:</b> functions.h:8</div></div>
+<div class="ttc" id="astructprocess_html_afb6bfb2401be55e0f32c65648e941464"><div class="ttname"><a href="structprocess.html#afb6bfb2401be55e0f32c65648e941464">process::nextProcesses</a></div><div class="ttdeci">struct process * nextProcesses</div><div class="ttdef"><b>Definition:</b> functions.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Solucao de Escalonamento - Tiago_Carvalho_18601_EEC_EDA: Referência ao ficheiro functions.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Solucao de Escalonamento - Tiago_Carvalho_18601_EEC_EDA<span id="projectnumber">&#160;Fase.2</span>
+   </div>
+   <div id="projectbrief">Estruturas de Dados 2021/2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro functions.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;malloc.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="user_8h_source.html">user.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ac9cadd2e959e8c82e332f4cea7d239f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#ac9cadd2e959e8c82e332f4cea7d239f2">NewJob</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *mainJob, int totalNewJobs, int jobNumb)</td></tr>
+<tr class="separator:ac9cadd2e959e8c82e332f4cea7d239f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ea2d93da0f56b8e06b486ee4ecbd16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a68ea2d93da0f56b8e06b486ee4ecbd16">NewAtUpload</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *mainJob, int jobNbr, int totalProc, int *operationNumber, int *totalMachines, int operations, int *buffMach, int *bufferTime, int lastPos)</td></tr>
+<tr class="separator:a68ea2d93da0f56b8e06b486ee4ecbd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eef11b269b69615e40669085f8ad911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a1eef11b269b69615e40669085f8ad911">LoadFromFile</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *mainJob, int *totalJobs)</td></tr>
+<tr class="separator:a1eef11b269b69615e40669085f8ad911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a6bbb10602df5f9bafe6a4c66515a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a43a6bbb10602df5f9bafe6a4c66515a2">RemoveJobs</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> **mainjob, int toRemove)</td></tr>
+<tr class="separator:a43a6bbb10602df5f9bafe6a4c66515a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7592560b72b03046bf4484f2e66e6d3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a7592560b72b03046bf4484f2e66e6d3b">SaveAllData</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *mainJob, int totalJobs)</td></tr>
+<tr class="separator:a7592560b72b03046bf4484f2e66e6d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453689d882b2d2278d0a26975ddf2aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a453689d882b2d2278d0a26975ddf2aa0">ShowAllData</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *jAux)</td></tr>
+<tr class="separator:a453689d882b2d2278d0a26975ddf2aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac929c33cd7eed8e0da92005961032971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#ac929c33cd7eed8e0da92005961032971">EditJobs</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *jAux, int toModify, int newJobNbr, bool *loaded)</td></tr>
+<tr class="separator:ac929c33cd7eed8e0da92005961032971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cfabd64251e5b05ab87f08c10726d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a96cfabd64251e5b05ab87f08c10726d8">AvailableJobs</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *jAux)</td></tr>
+<tr class="separator:a96cfabd64251e5b05ab87f08c10726d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024737ce7d1698c37f533d8d7a2608fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a024737ce7d1698c37f533d8d7a2608fd">FJSSP</a> (<a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *jAux)</td></tr>
+<tr class="separator:a024737ce7d1698c37f533d8d7a2608fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49073be9014ce8ccec2f8d2c12ffacff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a49073be9014ce8ccec2f8d2c12ffacff">ExportFJSSPTable</a> (int myArray[8][200], int totalTime)</td></tr>
+<tr class="separator:a49073be9014ce8ccec2f8d2c12ffacff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675bcce75d77d9fef5ac2307ef63993f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a675bcce75d77d9fef5ac2307ef63993f">NewProcess</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *mainProcess, int totalProcesses, bool uploaded, int newAdd)</td></tr>
+<tr class="separator:a675bcce75d77d9fef5ac2307ef63993f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59948889ed22035ee5814b516f7a5591"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a59948889ed22035ee5814b516f7a5591">NewAtLoad</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *loadProcess, int *totalMachines, int *operationNumber, int counter, int *bufferMachines, int *bufferTimes, int lastPos)</td></tr>
+<tr class="separator:a59948889ed22035ee5814b516f7a5591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f0858cae5935c9138d4a36d5bc1bd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a98f0858cae5935c9138d4a36d5bc1bd2">RemoveProcess</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> **proce, bool *loaded)</td></tr>
+<tr class="separator:a98f0858cae5935c9138d4a36d5bc1bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3baa3f72bacc5f7b518a365cf0cc8af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#ad3baa3f72bacc5f7b518a365cf0cc8af">ModifyData</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *pAux, bool *loaded)</td></tr>
+<tr class="separator:ad3baa3f72bacc5f7b518a365cf0cc8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e294d8a4d2cebb15b07ffd666be17ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a4e294d8a4d2cebb15b07ffd666be17ae">MinimumTime</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *pAux, bool uploaded, int min)</td></tr>
+<tr class="separator:a4e294d8a4d2cebb15b07ffd666be17ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74708d35bf2c07bd0143f4da7a92095"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#ad74708d35bf2c07bd0143f4da7a92095">MaximumTime</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *pAux, bool uploaded, int max)</td></tr>
+<tr class="separator:ad74708d35bf2c07bd0143f4da7a92095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42330b50d2c3fd639d8b3f2673f41272"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a42330b50d2c3fd639d8b3f2673f41272">AverageTime</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *pAux, bool uploaded, float avgDefault)</td></tr>
+<tr class="separator:a42330b50d2c3fd639d8b3f2673f41272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b2c9a6b7753cb5ab28a6a96e391cb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a08b2c9a6b7753cb5ab28a6a96e391cb7">ShowData</a> (<a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *pro, int min, int max, float avg, bool uploaded)</td></tr>
+<tr class="separator:a08b2c9a6b7753cb5ab28a6a96e391cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a96cfabd64251e5b05ab87f08c10726d8" name="a96cfabd64251e5b05ab87f08c10726d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96cfabd64251e5b05ab87f08c10726d8">&#9670;&nbsp;</a></span>AvailableJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AvailableJobs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>jAux</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42330b50d2c3fd639d8b3f2673f41272" name="a42330b50d2c3fd639d8b3f2673f41272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42330b50d2c3fd639d8b3f2673f41272">&#9670;&nbsp;</a></span>AverageTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AverageTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>pAux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>uploaded</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>avgDefault</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac929c33cd7eed8e0da92005961032971" name="ac929c33cd7eed8e0da92005961032971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac929c33cd7eed8e0da92005961032971">&#9670;&nbsp;</a></span>EditJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> * EditJobs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>jAux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>toModify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newJobNbr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>loaded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49073be9014ce8ccec2f8d2c12ffacff" name="a49073be9014ce8ccec2f8d2c12ffacff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49073be9014ce8ccec2f8d2c12ffacff">&#9670;&nbsp;</a></span>ExportFJSSPTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExportFJSSPTable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>myArray</em>[8][200], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a024737ce7d1698c37f533d8d7a2608fd" name="a024737ce7d1698c37f533d8d7a2608fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a024737ce7d1698c37f533d8d7a2608fd">&#9670;&nbsp;</a></span>FJSSP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FJSSP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>jAux</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1eef11b269b69615e40669085f8ad911" name="a1eef11b269b69615e40669085f8ad911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eef11b269b69615e40669085f8ad911">&#9670;&nbsp;</a></span>LoadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> * LoadFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>mainJob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>totalJobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad74708d35bf2c07bd0143f4da7a92095" name="ad74708d35bf2c07bd0143f4da7a92095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74708d35bf2c07bd0143f4da7a92095">&#9670;&nbsp;</a></span>MaximumTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MaximumTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>pAux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>uploaded</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e294d8a4d2cebb15b07ffd666be17ae" name="a4e294d8a4d2cebb15b07ffd666be17ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e294d8a4d2cebb15b07ffd666be17ae">&#9670;&nbsp;</a></span>MinimumTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MinimumTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>pAux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>uploaded</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3baa3f72bacc5f7b518a365cf0cc8af" name="ad3baa3f72bacc5f7b518a365cf0cc8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3baa3f72bacc5f7b518a365cf0cc8af">&#9670;&nbsp;</a></span>ModifyData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ModifyData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>pAux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>loaded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59948889ed22035ee5814b516f7a5591" name="a59948889ed22035ee5814b516f7a5591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59948889ed22035ee5814b516f7a5591">&#9670;&nbsp;</a></span>NewAtLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> * NewAtLoad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>loadProcess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>totalMachines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>operationNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>bufferMachines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>bufferTimes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lastPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68ea2d93da0f56b8e06b486ee4ecbd16" name="a68ea2d93da0f56b8e06b486ee4ecbd16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ea2d93da0f56b8e06b486ee4ecbd16">&#9670;&nbsp;</a></span>NewAtUpload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> * NewAtUpload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>mainJob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jobNbr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalProc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>operationNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>totalMachines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>operations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buffMach</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>bufferTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lastPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9cadd2e959e8c82e332f4cea7d239f2" name="ac9cadd2e959e8c82e332f4cea7d239f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cadd2e959e8c82e332f4cea7d239f2">&#9670;&nbsp;</a></span>NewJob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> * NewJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>mainJob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalNewJobs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jobNumb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a675bcce75d77d9fef5ac2307ef63993f" name="a675bcce75d77d9fef5ac2307ef63993f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675bcce75d77d9fef5ac2307ef63993f">&#9670;&nbsp;</a></span>NewProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> * NewProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>mainProcess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalProcesses</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>uploaded</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newAdd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43a6bbb10602df5f9bafe6a4c66515a2" name="a43a6bbb10602df5f9bafe6a4c66515a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a6bbb10602df5f9bafe6a4c66515a2">&#9670;&nbsp;</a></span>RemoveJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RemoveJobs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> **&#160;</td>
+          <td class="paramname"><em>mainjob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>toRemove</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98f0858cae5935c9138d4a36d5bc1bd2" name="a98f0858cae5935c9138d4a36d5bc1bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f0858cae5935c9138d4a36d5bc1bd2">&#9670;&nbsp;</a></span>RemoveProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RemoveProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> **&#160;</td>
+          <td class="paramname"><em>proce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>loaded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7592560b72b03046bf4484f2e66e6d3b" name="a7592560b72b03046bf4484f2e66e6d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7592560b72b03046bf4484f2e66e6d3b">&#9670;&nbsp;</a></span>SaveAllData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> * SaveAllData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>mainJob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalJobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a453689d882b2d2278d0a26975ddf2aa0" name="a453689d882b2d2278d0a26975ddf2aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453689d882b2d2278d0a26975ddf2aa0">&#9670;&nbsp;</a></span>ShowAllData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> * ShowAllData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#a0e5605e6749a83b950cfefcbfbd43d3d">jobs</a> *&#160;</td>
+          <td class="paramname"><em>jAux</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b2c9a6b7753cb5ab28a6a96e391cb7" name="a08b2c9a6b7753cb5ab28a6a96e391cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b2c9a6b7753cb5ab28a6a96e391cb7">&#9670;&nbsp;</a></span>ShowData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShowData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8h.html#aff451b9c9b5a160db7950f061fde164e">processes</a> *&#160;</td>
+          <td class="paramname"><em>pro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>avg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>uploaded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>
